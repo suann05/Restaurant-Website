@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>My Booking</title>
+    <link rel="icon" href="images/logoDark.svg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+    <style>
+        .mybookings-card {
+            flex-direction: row;
+            background-color: #f6f4e6;
+            border: 0;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.18);
+            margin: 2em auto;
+            position: relative;
+            top: 50%;
+            
+        }
+
+        .mybookings-card:hover {
+            box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+            transition: all 0.2s;
+        }
+
+        .mybookings-button-group {
+            margin: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mybookings-btn {
+            margin: 20px 0 20px 0;
+            border: 0px;
+            padding: 15px;
+            border-radius: 15px;
+            width: 180px;
+        }
+
+        .mybookings-btn:hover {
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.18);
+            transition: all 0.2s;
+        }
+
+        #preorder-btn {
+            background-color: #352222;
+            color: white;
+        }
+        
+        #cancelbooking-btn {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #352222;" >
+    <div class="container-fluid"  style="margin-left: 2rem;">
+        <a class="navbar-brand" href="index.html" >
+            <img src="images/logoLight.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        </a>
+        <h5 class="website-title">WesternBay</h5>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 2rem;">
+        <ul class="navbar-nav">
+          <li class="nav-item h6">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item h6">
+            <a class="nav-link"  href="bookNow.html">Book Now</a>
+          </li>
+          <li class="nav-item h6">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item h6">
+            <div class="nav-item dropdown" style="position: relative; right: -20px; ">
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+                  Webebey123
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="font-family: 'Cairo', sans-serif;">
+                  <a class="dropdown-item" href="editProfile.html">Edit Profile</a>
+                  <a class="dropdown-item" href="myBooking.html">My Bookings</a>
+                  <a class="dropdown-item" href="index.html">Sign Out</a>
+                </div>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="container">
+        <h1 class="mybookings_title mt-5" style="font-size:3rem;">My Bookings</h1>
+        <hr>
+        <div class="row">
+          <div class="col-md-9">
+                <div class="card-deck">
+                    <div class="mybookings-card">
+                      <div class="card-body">
+                        <h5 class="reservationcard_title mb-4">Reservation 1</h5>
+                        <div class="row">
+                            <div class="col-3 text-end"><p class="reservationcard-text"><b>Reservee :</b></p></div>
+                            <div class="col-3"><p class="reservationcard-text">Jin Ren, Tan</p></div>
+                            <div class="col-3 text-end"><p class="reservationcard-text"><b>Date :</b></p></div>
+                            <div class="col-3"><p class="reservationcard-text">03-05-2023</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-end"><p class="reservationcard-text"><b>Contact :</b></p></div>
+                            <div class="col-3"><p class="reservationcard-text">0172351811</p></div>
+                            <div class="col-3 text-end"><p class="reservationcard-text"><b>Time :</b></p></div>
+                            <div class="col-3"><p class="reservationcard-text">15:30</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 text-end"><p class="reservationcard-text"><b>Dining pax :</b></p></div>
+                            <div class="col-3"><p class="reservationcard-text">2</p></div>
+                            <div class="col-3 text-end"><p class="reservationcard-text"><b>Table :</b></p></div>
+                            <div class="col-3"><p class="reservationcard-text">4</p></div>
+                        </div>
+                        
+                    
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="mybookings-button-group text-center">
+                    <div class="row"><a><button class="mybookings-btn" id="preorder-btn">Pre-order Food</button></a></div>
+                    <div class="row"><a><button class="mybookings-btn" id="cancelbooking-btn">Cancel Booking</button></a></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>

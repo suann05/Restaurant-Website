@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="images/logoDark.svg">
+  <title>Edit Profile</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  
+      <!-- Font Awesome CDN -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/profile.css" />
+    
+<style>
+.navbar-brand, .nav-link {
+  font-family: 'Kalam', cursive;
+}
+
+h2 {
+      font-family: 'Kalam', cursive;
+    }
+
+body {
+      font-family: 'Cairo', cursive;
+      Overflow-x : hidden
+    }
+
+.tab-pane.active {
+  background-color: #F9F5F0;
+}
+</style>
+
+</head>
+
+<body style="background-color: #F9F5F0;">
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-5" style="background-color: #352222;">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logoLight.svg" alt="" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 0.5rem;">
+        WesternBay 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booknow.html">Book Now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Webebey123
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="editProfile.html">Edit Profile</a>
+                <a class="dropdown-item" href="myBooking.html">My Bookings</a>
+                <a class="dropdown-item" href="index.html">Sign Out</a>
+              </div>
+            </li>
+          </ul>
+    </div>
+  </nav>
+
+    <header>
+        <!-- Your header content here -->
+    </header>
+    
+    <editprofile-main>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <div class="container" id="my-container">
+        <div class="row flex-lg-nowrap">
+          <div class="col-12 col-lg-auto mb-3" style="width: 250px;"></div>
+    
+          <div class="col" id="my-col">
+            <div class="row">
+              <div class="col mb-3" id="my-col-1"><br><br>
+                <h2 style="color: #352222;"><i class="fa fa-pencil-square-o"></i><b>&nbsp;Edit Profile</b></h2><br>
+                <div class="tab-content pt-3" id="my-tab-content">
+                  <div class="tab-pane active">
+                    <form class="form" novalidate="" id="my-form">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label style="color: #352222;"><b>Name</b></label>
+                            <input class="form-control" style="border-color: #A26B6B; background-color:#F9F5F0;"
+                              type="text" name="name" placeholder="Webebey123" id="my-name">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            <label style="color: #352222;"><b>Phone Number</b></label>
+                            <input class="form-control" style="border-color: #A26B6B; background-color:#F9F5F0;"
+                              type="text" name="phone number" placeholder="01234567890" id="my-phone">
+                          </div>
+                        </div>
+                      </div><br>
+    
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label style="color: #352222;"><b>Email</b></label>
+                            <input class="form-control" style="border-color: #A26B6B; background-color:#F9F5F0;"
+                              type="email" value="Webebey123@gmail.com" disabled id="my-email">
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+    
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label style="color: #352222;"><b>Current Password</b></label>
+                            <input class="form-control" style="border-color: #A26B6B; background-color:#F9F5F0;"
+                              type="password" placeholder="••••••" id="my-current-password">
+                          </div>
+                        </div>
+    
+                        <div class="col">
+                          <div class="form-group">
+                            <label style="color: #352222;"><b>New Password</b></label>
+                            <input class="form-control" style="border-color: #A26B6B; background-color:#F9F5F0;"
+                              type="password" placeholder="••••••" id="my-new-password">
+                          </div>
+                          <br>
+                        </div>
+                      </div>                    
+
+                      <suzanne-h6 id="unhappy-heading" style="color: #352222;"><b>Unhappy?</b></suzanne-h6>
+                      <p id="delete-account-message" style="color: #352222;">Want to delete this account? All your information will be lost and unrecoverable.<br>
+                          
+                          <!-- Button trigger modal -->
+                          <a id="LoginA" href="#" data-toggle="modal" data-target="#deleteAccountModal" style="color: #F1BF78;"><b>Delete my account.</b></a></p>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="deleteAccountModal" tabindex="-1" role="dialog" aria-labelledby="deleteAccountModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="deleteAccountModalLabel">Delete Account</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Are you sure you want to delete your account?
+                                </div>
+                                <div class="modal-footer" >
+                                  <button type="button" class="btn modal-btn-secondary LoginBtn4" data-dismiss="modal">Cancel</button>
+                                  <a href="#" class="btn modal-btn-danger LoginBtn4">Delete</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                      <div class="row">
+                          <div class="col d-flex justify-content-center">
+                              <form id="account-settings-form" method="post">
+                                  <button id="cancel-button" class="btn btn-outline-secondary LoginBtn3" style="border-color: #F1BF78; color: #F1BF78;" type="submit">Cancel</button>
+                                  &nbsp;&nbsp;
+                                  <button id="save-button" class="btn btn-primary LoginBtn3" style="background-color: #F1BF78; border-color: #F1BF78;" type="submit">Save Changes</button>
+                              </form>
+                            
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3"></div>
+
+            </div>
+
+        </div>
+        </div>
+      </div>
+    </editprofile-main>
+    <br><br><br>
+
+    <footer class="text-center text-muted">
+      <!-- Section: Links  -->
+      <div>
+        <div class="text-md-start" style="background-color: #352222;">
+          <!-- Grid row -->
+          <div class="row mt-3" >
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Content -->
+              <p class="fw-bold mb-4" style="color: #F9F5F0;">
+                <strong class="fas text-secondary"></strong>www.westernbay.com
+              </p>
+              <p>
+                From appetizers to desserts, 
+                <br>our menu has got you covered.
+                <br>We believe in cooking with passion, 
+                <br>and sharing with love.
+                
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Book Now
+              </h6>
+              <p>
+                <a href="bookNow.html" class="text-reset">Book A Table</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Menu
+              </h6>
+              <p>
+                <a href="menu.html" class="text-reset">Main</a>
+              </p>
+              <p>
+                <a href="menu.html" class="text-reset">Soup</a>
+              </p>
+              <p>
+                <a href="menu.html" class="text-reset">Sides</a>
+              </p>
+              <p>
+                <a href="menu.html" class="text-reset">Beverage</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                About
+              </h6>
+              <p>
+                <a href="about.html" class="text-reset">WesternBay</a>
+              </p>
+              <p>
+                <a href="about.html" class="text-reset">Our Team</a>
+              </p>
+            </div>
+    
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+              <p><i class="text-secondary"></i> Jalan Universiti, Malaysia</p>
+              <p>
+                <i class="text-secondary"></i>
+                westernbay@gmail.com
+              </p>
+              <p><i class="text-secondary"></i> + 01 234 567 88</p>
+              <p><i class="text-secondary"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </div>
+      <!-- Section: Links  -->
+    
+    </footer>
+    <!-- Footer -->
+
+    <script>
+      document.getElementById("save-button").addEventListener("click", function() {
+        alert("Changes saved!");
+      });
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-/TqnXoN9a8+854LrT28WW4yCjxqOqzTC1a/cz1yYXQ7bYiXvIjQ2aThPAYB6voQ4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-1WhYFpN34+U+kC6UaJ6zD+skSzTmZ9XvQ8mXdWGWkCmll0dveKxCG2gPwJKsz5ue"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-MbD95n1S/zrkDQl7VhE4ztxNVVc3Lb1ZJFygZmmONRFl/h+7IrbrMFnQnyVEXyOx"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSLrO1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

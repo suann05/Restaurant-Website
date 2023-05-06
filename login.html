@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/logoDark.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/profile.css" />
+
+    <title>Login</title>
+
+    <style>
+      .navbar-brand, .nav-link {
+        font-family: 'Kalam', cursive;
+      }
+      
+      .navbar-brand:hover {
+        color: #F1BF78 !important;
+      }
+    </style>
+
+  </head>
+  <Body id="LoginBody">
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #352222;" >
+      <div class="container-fluid"  style="margin-left: 2rem;">
+          <a class="navbar-brand" href="index.html" >
+              <img src="images/logoLight.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+          </a>
+          <h5 class="website-title">WesternBay</h5>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 2rem;">
+          <ul class="navbar-nav">
+            <li class="nav-item h6">
+              <a class="nav-link"  href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item h6">
+              <a class="nav-link" href="bookNow.html">Book Now</a>
+            </li>
+            <li class="nav-item h6">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item h6">
+              <a class="nav-link active" aria-current="page" href="login.html">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Todo: Create main container and columns with form and image -->
+    <main class="row m-auto shadow bg-white px-0" id="LoginMain">
+      <a href="index.html" id="LoginA"><i class="fa-solid fa-xmark"></i></a>
+      <div class="col" id="LoginDiv">
+        <form id="LoginForm"
+          action="editProfile.html"
+          class="row g-3 needs-validation"
+          novalidate
+        >
+          <h2 class="text-center mb-5" id="Loginh2"><b>Login</b></h2>
+          
+          <!-- Todo: Create form username and password inputs -->
+          <div class="d-flex p-0" id="LoginDiv">
+            <i class="fa-solid fa-circle-user"></i>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email"
+              id="validationCustom01"
+              required
+            />
+          </div>
+
+          <div class="d-flex p-0" id="LoginDiv">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              id="validationCustom02"
+              required
+            />
+          </div>
+
+          <!-- Add space between password and radio buttons -->
+          <div class="my-2"></div>
+
+          <!-- Create radio buttons for user type -->
+
+          <div class="form-group row" id="LoginDiv">
+            <label class="col-2 col-form-label"></label>
+            <div class="col-9" id="LoginDiv">
+              <div class="form-check form-check-inline" id="LoginDiv">
+                <input class="form-check-input" type="radio" name="userType" id="customerRadio" value="customer" required>
+                <label class="form-check-label" for="customerRadio">Customer</label>
+              </div>
+              <div class="form-check form-check-inline" id="LoginDiv">
+                <input class="form-check-input" type="radio" name="userType" id="adminRadio" value="admin" required>
+                <label class="form-check-label" for="adminRadio">Admin</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex p-0" id="LoginDiv">
+            <div class="col text-center" id="LoginDiv">
+              <button class="btn Login-btn-primary LoginBtn" type="submit">
+                Login
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex p-0" id="LoginDiv">
+            <div class="col-5" id="LoginDiv">
+              <hr />
+            </div>
+            <div class="col-2 text-center" id="LoginDiv">
+              <small class="text-secondary">or</small>
+            </div>
+            <div class="col-5" id="LoginDiv">
+              <hr />
+            </div>
+          </div>
+          <div class="d-flex p-0" id="LoginDiv">
+            <div class="col text-center" id="LoginDiv">
+              <a href="registration.html" class="col text-center" id="LoginA">
+                <button class="btn Login-btn-dark LoginBtn" type="button">
+                  Register
+                </button>
+              </a>
+            </div>
+          </div>
+        </form>
+
+        <footer class="col text-center" id="LoginFooter">
+          <a href="#" id="LoginA">&copy;WesternBay</a>
+        </footer>
+
+      </div>
+
+      <!-- Todo: Create main container and columns with form and image -->
+      `
+      <div class="col px-0" id="LoginDiv">
+        <img src="images/Food background.png" alt="" id="LoginImg"/>
+      </div>
+    </main>
+
+    <br><br><br><br><br><br>
+
+    <footer class="text-center text-muted">
+      <!-- Section: Links  -->
+      <div>
+        <div class="text-md-start" style="background-color: #352222;">
+          <!-- Grid row -->
+          <div class="row mt-3" >
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Content -->
+              <p class="fw-bold mb-4" style="color: #F9F5F0;">
+                <strong class="fas text-secondary"></strong>www.westernbay.com
+              </p>
+              <p>
+                From appetizers to desserts, 
+                <br>our menu has got you covered.
+                <br>We believe in cooking with passion, 
+                <br>and sharing with love.
+                
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Book Now
+              </h6>
+              <p>
+                <a href="bookNow.html" class="text-reset">Book A Table</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Menu
+              </h6>
+              <p>
+                <a href="menu.html" class="text-reset">Main</a>
+              </p>
+              <p>
+                <a href="menu.html" class="text-reset">Soup</a>
+              </p>
+              <p>
+                <a href="menu.html" class="text-reset">Sides</a>
+              </p>
+              <p>
+                <a href="menu.html" class="text-reset">Beverage</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                About
+              </h6>
+              <p>
+                <a href="about.html" class="text-reset">WesternBay</a>
+              </p>
+              <p>
+                <a href="about.html" class="text-reset">Our Team</a>
+              </p>
+            </div>
+    
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4" style="margin-top: 3rem;">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+              <p><i class="text-secondary"></i> Jalan Universiti, Malaysia</p>
+              <p>
+                <i class="text-secondary"></i>
+                westernbay@gmail.com
+              </p>
+              <p><i class="text-secondary"></i> + 01 234 567 88</p>
+              <p><i class="text-secondary"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </div>
+      <!-- Section: Links  -->
+    
+    </footer>   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSLrO1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <!--  Bootstrap JS CDN-->
+
+    <!-- Todo: Implement Form Validation using Bootstrap  -->
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+    <script src="js/validation.js"></script>
+    
+  </Body>
+</html>

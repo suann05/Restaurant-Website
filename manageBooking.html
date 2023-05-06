@@ -1,0 +1,314 @@
+<html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <!-- Option 1: Include in HTML -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+
+        <title>Manage Booking</title>
+        <link rel="icon" href="images/logoDark.svg">
+        <link rel="stylesheet" type="text/css" href="css/management.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+    </head>
+    <body id="bodynew">
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #352222;" >
+        <div class="container-fluid"  style="margin-left: 2rem;">
+            <a class="navbar-brand" href="index.html" >
+                <img src="images/logoLight.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <h5 class="website-title">WesternBay</h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 2rem;">
+            <ul class="navbar-nav">
+              <li class="nav-item h6">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item h6">
+                <a class="nav-link active" aria-current="page" href="management.html">Management</a>
+              </li>
+              <li class="nav-item h6">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item h6">
+                <div class="nav-item dropdown" style="position: relative; right: -20px; ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+                      Webebey123
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="font-family: 'Cairo', sans-serif;">
+                      <a class="dropdown-item" href="editProfile.html">Edit Profile</a>
+                      <a class="dropdown-item" href="index.html">Sign Out</a>
+                    </div>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <br>
+          
+          <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-3">
+              <p></p>
+            </div>
+            <div class="col-6">
+              <div class="form">
+                <i class="bi-search" style="position:absolute; top:5.8rem; right:31rem" ></i>
+                <input type="text" id="myInput" onkeyup="myFunction()" class="form-control form-input" placeholder="Search" style="font-family: 'Cairo'; width:80%">
+              </div>
+            </div>
+            <div class="col-2 dropdown">
+              <button class="btn btn-secondary btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Cairo'; background-color: white; background-color: white; padding: 0.3rem; font-size: 1rem;">
+                Filter by:&emsp;&emsp;
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="font-family: 'Cairo';">Last 7 days</a></li>
+                <li><a class="dropdown-item" href="#" style="font-family: 'Cairo';">Last 30 days</a></li>
+                <li><a class="dropdown-item" href="#" style="font-family: 'Cairo';">Last 90 days</a></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+
+          <div class="container-new">
+            <table class="table" id="myTable">
+                <thead style="font-family: 'Kalam',cursive;">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">CODE</th>
+                    <th scope="col">DATE UPDATED</th>
+                    <th scope="col">CLIENT</th>
+                    <th scope="col">STATUS</th>
+                    <th scope="col">ACTION</th>
+                  </tr>
+                </thead>
+                <tbody style="font-family: 'Cairo';">
+                  <tr>
+                    <th scope="row" style="text-align: center;">1&emsp;&emsp;</th>
+                    <td>22000230214</td>
+                    <td>Feb 14,2023</td>
+                    <td>abc123</td>
+                    <td>
+                      <p class="arriveCon" style="text-align: center;"><strong>Arrived</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: center;">2&emsp;&emsp;</th>
+                    <td>22001230305</td>
+                    <td>Mac 05,2023</td>
+                    <td>def456</td>
+                    <td>
+                      <p class="arriveCon" style="text-align: center;"><strong>Arrived</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: center;">3&emsp;&emsp;</th>
+                    <td >22002230322</td>
+                    <td>Mac 22,2023</td>
+                    <td>ghi789</td>
+                    <td>
+                      <p class="confirmCon" style="text-align: center;"><strong>Confirmed</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: center;">4&emsp;&emsp;</th>
+                    <td >22003230410</td>
+                    <td>Apr 10,2023</td>
+                    <td>jkl123</td>
+                    <td>
+                      <p class="confirmCon" style="text-align: center;"><strong>Confirmed</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: center;">5&emsp;&emsp;</th>
+                    <td >22004230522</td>
+                    <td>May 22,2023</td>
+                    <td>mno456</td>
+                    <td>
+                      <p class="cancelCon" style="text-align: center;"><strong>Cancelled</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: center;">6&emsp;&emsp;</th>
+                    <td >22005230604</td>
+                    <td>Jun 04,2023</td>
+                    <td>pqr789</td>
+                    <td>
+                      <p class="pendingCon" style="text-align: center;"><strong>Pending</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: center;">7&emsp;&emsp;</th>
+                    <td >22006230730</td>
+                    <td>Jul 30,2023</td>
+                    <td>stu123</td>
+                    <td>
+                      <p class="pendingCon" style="text-align: center;"><strong>Pending</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: center;">8&emsp;&emsp;</th>
+                    <td >22007230803</td>
+                    <td>Aug 03,2023</td>
+                    <td>vwx456</td>
+                    <td>
+                      <p class="pendingCon" style="text-align: center;"><strong>Pending</strong></p>
+                    </td>
+                    <td>
+                      <a href="bookingDetails.html">
+                        <button class="detailsCon">Details</button>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div><br><br>
+
+          <footer class="text-center text-muted">
+            <!-- Section: Links  -->
+            <div>
+              <div class="text-md-start" style="background-color: #352222;">
+                <!-- Grid row -->
+                <div class="row mt-3" >
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Content -->
+                    <p class="fw-bold mb-4" style="color: #F9F5F0;">
+                      <strong class="fas fa-gem text-secondary"></strong>www.westernbay.com
+                    </p>
+                    <p>
+                      From appetizers to desserts, 
+                      <br>our menu has got you covered.
+                      <br>We believe in cooking with passion, 
+                      <br>and sharing with love.
+                      
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Book Now
+                    </h6>
+                    <p>
+                      <a href="bookNow.html" class="text-reset">Book A Table</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Menu
+                    </h6>
+                    <p>
+                      <a href="menu.html" class="text-reset">Main</a>
+                    </p>
+                    <p>
+                      <a href="menu.html" class="text-reset">Soup</a>
+                    </p>
+                    <p>
+                      <a href="menu.html" class="text-reset">Sides</a>
+                    </p>
+                    <p>
+                      <a href="menu.html" class="text-reset">Beverage</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      About
+                    </h6>
+                    <p>
+                      <a href="about.html" class="text-reset">WesternBay</a>
+                    </p>
+                    <p>
+                      <a href="about.html" class="text-reset">Our Team</a>
+                    </p>
+                  </div>
+          
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                    <p><i class="text-secondary"></i> Jalan Universiti, Malaysia</p>
+                    <p>
+                      <i class="text-secondary"></i>
+                      westernbay@gmail.com
+                    </p>
+                    <p><i class="text-secondary"></i> + 01 234 567 88</p>
+                    <p><i class="text-secondary"></i> + 01 234 567 89</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </div>
+            <!-- Section: Links  -->
+          
+          </footer>
+          <!-- Footer -->
+          
+                  <!-- Include Bootstrap JavaScript plugin -->
+                  <script
+                      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/boot
+                      strap.bundle.min.js" integrity="sha384-
+                      ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
+                      1p" crossorigin="anonymous">
+                  </script>
+                  <script type="text/javascript" src="js/manage_searchbar.js">
+
+                  </script>
+        </div>
+          </body>
+          </html>

@@ -1,0 +1,208 @@
+#LoginA {
+    text-decoration: none;
+  }
+  
+  :root {
+    --bodyBg: #F2EAD3;
+    --gmail: rgb(219, 68, 55);
+    --customGray: #e6d6f6;
+    --facebook: rgba(59, 89, 152);
+    --twitter: rgba(29, 161, 242);
+  }
+  
+/* Nav and Footer Style */
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  font-family: Kalam;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 5.5rem;
+  }
+}
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  color: #F9F5F0;
+}
+
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+h5, .h5 {
+  color: #F9F5F0;
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  color: #F9F5F0;
+}
+
+a {
+  color: var(--bs-link-color);
+  text-decoration: none;
+}
+
+.website-title {
+  margin-top: 3px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color:#352222;
+}
+
+footer p{
+  color: #6C757D;
+  font-family: 'Cairo', sans-serif;
+}
+/* Nav and Footer Style End */
+
+  #LoginBody {
+    background-color: var(--bodyBg);
+    font-family: 'Cairo', sans-serif !important;
+    Overflow-x : hidden;
+    height: 55rem;
+  }
+  
+  #LoginMain {
+    position: relative;
+    width: 1000px;
+    height: 750px;
+    top: 10vh;
+  }
+  
+  #LoginForm {
+    width: 330px;
+    margin: auto !important;
+  }
+  
+  #LoginImg {
+    height: 750px;
+    width: 100%;
+  }
+  
+  #Loginh2, .h2{
+    font-family: 'Kalam', sans-serif;
+    color: #352222;
+  }
+  
+  .fa-xmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  .fa-xmark:hover {
+    cursor: pointer;
+    color: var(--gmail);
+  }
+  .fa-circle-user,
+  .fa-key,
+  .fa-user,
+  .fa-envelope,
+  .fa-code {
+    border: 1px solid var(--customGray);
+    padding: 0.5rem;
+  }
+  
+  #LoginFooter {
+    position: relative;
+    margin-top: 100px;
+  }
+  #LoginFooter:hover {
+    cursor: pointer;
+    color: rgba(29, 161, 242);
+  }
+  
+  /* Responsive  */
+  @media (max-width: 1000px) {
+    #LoginMain {
+      max-width: 400px;
+    }
+    #LoginMain div:nth-child(3) {
+      display: none;
+    }
+  }
+  
+  .Login-btn-primary {
+    background-color: #F1BF78;
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: #F1BF78;
+  }
+  .Login-btn-dark {
+    background-color: #352222;
+    color: #fff;
+  }
+  
+  .LoginBtn {
+    height: 40px;
+    width: 330px; 
+    font-size: 16px; 
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    line-height: 5px; 
+  }
+  
+  .LoginBtn2 {
+    font-size: 16px; 
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    line-height: 5px; 
+  }
+  
+  .LoginBtn3 {
+    height: 40px;
+    width: 160px; 
+    color: #f0f0f0;
+    font-size: 16px; 
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    line-height: 5px; 
+  }
+  
+  .modal-btn-danger{
+    background-color: #d4403a;
+    color: #fff;
+  
+  }
+  
+  .modal-btn-secondary {
+    background-color: grey;
+    color: #fff;
+  }
+  
+  .LoginBtn4 {
+    font-size: 16px;  
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    line-height: 10px; 
+  }
+  
+  #ConfrimRegistration, .h3{
+    font-family: 'Cairo', sans-serif;
+    color: #352222;
+  }
+  
+  #unhappy-heading, .suzanne-h6{
+    font-family: 'Cairo', sans-serif;
+    color: #352222;
+  }
+  
+  #deleteAccountModalLabel, .h5{
+    font-family: 'Cairo', sans-serif;
+    color: #352222;
+  }

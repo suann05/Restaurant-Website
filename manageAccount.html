@@ -1,0 +1,323 @@
+<html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+        <title>Manage Account</title>
+        <link rel="icon" href="images/logoDark.svg">
+        <link rel="stylesheet" type="text/css" href="css/management.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+    </head>
+    <body id="bodynew">
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #352222;" >
+        <div class="container-fluid"  style="margin-left: 2rem;">
+            <a class="navbar-brand" href="index.html" >
+                <img src="images/logoLight.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <h5 style="color: #F9F5F0; margin-top: 4px;">WesternBay</h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 2rem;">
+            <ul class="navbar-nav">
+              <li class="nav-item h6">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item h6">
+                <a class="nav-link active" aria-current="page"  href="management.html">Management</a>
+              </li>
+              <li class="nav-item h6">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item h6">
+                <div class="nav-item dropdown" style="position: relative; right: -1.25rem;">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+                      Webebey123
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="font-family: 'Cairo', sans-serif;">
+                      <a class="dropdown-item" href="editProfile.html">Edit Profile</a>
+                      <a class="dropdown-item" href="index.html">Sign Out</a>
+                    </div>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+          <br>
+
+          <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-3">
+              <p></p>
+            </div>
+            <div class="col-6">
+              <div class="form">
+                <i class="bi-search" style="position:absolute; top:5.8rem; right:31rem" ></i>
+                <input type="text" id="myInput" onkeyup="myFunction()" class="form-control form-input" placeholder="Search" style="font-family: 'Cairo'; width:80%;">
+              </div>
+            </div>
+            <div class="col-2 dropdown">
+              <button class="btn btn-secondary btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Cairo'; background-color: white; padding: 0.3rem; font-size: 1rem;">
+                Filter by:&emsp;&emsp;
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="font-family: 'Cairo';">Active last 7 days ago</a></li>
+                <li><a class="dropdown-item" href="#" style="font-family: 'Cairo';">Active last 30 days ago</a></li>
+                <li><a class="dropdown-item" href="#" style="font-family: 'Cairo';">Active last 90 days ago</a></li> 
+              </ul>
+            </div>
+          </div>
+          <br>
+          
+
+          <div class="container-new">
+            <table class="table" id="myTable">
+                <thead style="font-family: 'Kalam',cursive;">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">EMAIL</th>
+                    <th scope="col">DATE ADDED</th>
+                    <th scope="col">LAST ACTIVE</th>
+                    <th scope="col">ACCOUNT</th>
+                    <th scope="col"> </th>
+                  </tr>
+                </thead>
+                <tbody style="font-family: 'Cairo';">
+                  <tr>
+                    <th scope="row">&emsp;1&emsp;</th>
+                    <td>abc123</td>
+                    <td>abc123@gmail.com</td>
+                    <td>Jan 01,2023</td>
+                    <td>Sept 01,2023</td>
+                    <td>
+                      <p class="adminCon" style="text-align: center;">Admin</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;2&emsp;</th>
+                    <td>def456</td>
+                    <td>def456@gmail.com</td>
+                    <td>Feb 02,2023</td>
+                    <td>Sept 02,2023</td>
+                    <td>
+                      <p class="userCon" style="text-align: center;">User</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;3&emsp;</th>
+                    <td>ghi789</td>
+                    <td>ghi789@gmail.com</td>
+                    <td >Mac 03,2023</td>
+                    <td>Sept 03,2023</td>
+                    <td>
+                      <p class="userCon" style="text-align: center;">User</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;4&emsp;</th>
+                    <td>jkl123</td>
+                    <td>jkl123@gmail.com</td>
+                    <td >Apr 04,2023</td>
+                    <td>Sept 04,2023</td>
+                    <td>
+                      <p class="adminCon" style="text-align: center;">Admin</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;5&emsp;</th>
+                    <td>mno456</td>
+                    <td>mno456@gmail.com</td>
+                    <td >May 05,2023</td>
+                    <td>Sept 05,2023</td>
+                    <td>
+                      <p class="adminCon" style="text-align: center;">Admin</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;6&emsp;</th>
+                    <td>pqr789</td>
+                    <td>pqr789@gmail.com</td>
+                    <td >Jun 06,2023</td>
+                    <td>Sept 06,2023</td>
+                    <td>
+                      <p class="adminCon" style="text-align: center;">Admin</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;7&emsp;</th>
+                    <td>stu123</td>
+                    <td>stu123@gmail.com</td>
+                    <td >Jul 07,2023</td>
+                    <td>Sept 07,2023</td>
+                    <td>
+                      <p class="userCon" style="text-align: center;">User</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;8&emsp;</th>
+                    <td>vwx456</td>
+                    <td>vwx456@gmail.com</td>
+                    <td >Aug 08,2023</td>
+                    <td>Sept 08,2023</td>
+                    <td>
+                      <p class="userCon" style="text-align: center;">User</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&emsp;9&emsp;</th>
+                    <td>vwx456</td>
+                    <td>vwx456@gmail.com</td>
+                    <td >Aug 08,2023</td>
+                    <td>Sept 08,2023</td>
+                    <td>
+                      <p class="userCon" style="text-align: center;">User</p>
+                    </td>
+                    <td><img src="images/delete.png" width="25" height="25" data-bs-toggle="modal" data-bs-target="#Modal2"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div><br><br>
+
+          <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="font-family: 'Cairo';">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" style="text-align: center; color:#E63946">Are you sure?</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Once deleted, you will not be able to recover the data.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="text-center text-muted">
+            <!-- Section: Links  -->
+            <div>
+              <div class="text-md-start" style="background-color: #352222;">
+                <!-- Grid row -->
+                <div class="row mt-3" >
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Content -->
+                    <p class="fw-bold mb-4" style="color: #F9F5F0;">
+                      <strong class="fas fa-gem text-secondary"></strong>www.westernbay.com
+                    </p>
+                    <p>
+                      From appetizers to desserts, 
+                      <br>our menu has got you covered.
+                      <br>We believe in cooking with passion, 
+                      <br>and sharing with love.
+                      
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Book Now
+                    </h6>
+                    <p>
+                      <a href="bookNow.html" class="text-reset">Book A Table</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Menu
+                    </h6>
+                    <p>
+                      <a href="menu.html" class="text-reset">Main</a>
+                    </p>
+                    <p>
+                      <a href="menu.html" class="text-reset">Soup</a>
+                    </p>
+                    <p>
+                      <a href="menu.html" class="text-reset">Sides</a>
+                    </p>
+                    <p>
+                      <a href="menu.html" class="text-reset">Beverage</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      About
+                    </h6>
+                    <p>
+                      <a href="about.html" class="text-reset">WesternBay</a>
+                    </p>
+                    <p>
+                      <a href="about.html" class="text-reset">Our Team</a>
+                    </p>
+                  </div>
+          
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4" style="margin-top: 3rem;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                    <p><i class="text-secondary"></i> Jalan Universiti, Malaysia</p>
+                    <p>
+                      <i class="text-secondary"></i>
+                      westernbay@gmail.com
+                    </p>
+                    <p><i class="text-secondary"></i> + 01 234 567 88</p>
+                    <p><i class="text-secondary"></i> + 01 234 567 89</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </div>
+            <!-- Section: Links  -->
+          
+          </footer>
+          <!-- Footer -->
+          
+                  <!-- Include Bootstrap JavaScript plugin -->
+                  <script
+                      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/boot
+                      strap.bundle.min.js" integrity="sha384-
+                      ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
+                      1p" crossorigin="anonymous">
+                  </script>
+                  
+        <script type="text/javascript" src="js/manage_searchbar.js">
+
+        </script>
+          
+        </div>
+          </body>
+          </html>
